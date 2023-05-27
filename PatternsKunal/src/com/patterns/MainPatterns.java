@@ -13,6 +13,8 @@ public class MainPatterns {
       pattern2(5);
       System.out.println();
       pattern3(5);
+      System.out.println();
+      pattern4(5);
    }
 
    static void  pattern1(int n){
@@ -81,6 +83,16 @@ public class MainPatterns {
    static void pattern3(int n){
       for(int row = 1; row <= n; row++){
          for(int col = row; col <= n; col++){
+            System.out.print("* ");
+         }
+         System.out.println();
+      }
+   }
+
+   static void pattern4(int n){
+      for(int row = 0; row < 2 * n; row++){
+         int totalColsInRow =  row > n ? 2*n-row : row;
+         for (int col = 0; col < totalColsInRow; col++){
             System.out.print("* ");
          }
          System.out.println();

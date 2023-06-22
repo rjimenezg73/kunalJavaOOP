@@ -12,5 +12,23 @@ public class Main {
       int[] rno = new int[5];
       String[] name = new String[5];
       float[] marks = new float[5];
+
+      Student[] students = new Student[5];
+      /*
+      Student kunal;
+      kunal = new Student();*/
+
+      Student kunal = new Student();
+      System.out.println(kunal.rno);
+
    }
+}
+
+// Create a Class
+class Student{
+   int rno;
+   String name;
+   float marks;
+
+
 }
